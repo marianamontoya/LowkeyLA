@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        Log.d("mytag","start test");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -71,7 +70,6 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        Log.d("mytag","option " + id);
 
         //noinspection SimplifiableIfStatement
 //        if (id == R.id.action_settings) {
@@ -88,7 +86,6 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
 
         int id = item.getItemId();
-        Log.d("mytag","nav " + id);
         FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.restaurantsNav) {
@@ -122,7 +119,6 @@ public class MainActivity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        Log.d("mytag","test12");
         return true;
     }
 }

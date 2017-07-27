@@ -5,7 +5,7 @@
     <item
         android:id="@+id/mapButton"
         android:icon="@drawable/ic_map"
-        android:title="About Us"
+        android:title="Map"
         app:showAsAction="always" />
         />
 

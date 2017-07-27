@@ -22,38 +22,35 @@
 
         <activity
             android:name=".Food"
-            android:label="Restaurants"
-            />
+            android:label="Restaurants" />
+
+        <activity
+            android:name=".FoodMap"
+            android:label="Restaurant Map" />
 
         <activity
             android:name=".FoodTrucks"
-            android:label="Food Trucks"
-            />
+            android:label="Food Trucks" />
 
         <activity
             android:name=".Picture"
-            android:label="Picture Perfect"
-            />
+            android:label="Picture Perfect" />
 
         <activity
             android:name=".Museums"
-            android:label="Museums"
-            />
+            android:label="Museums" />
 
         <activity
             android:name=".CoolPlaces"
-            android:label="Cool Places"
-            />
+            android:label="Cool Places" />
 
         <activity
             android:name=".FilmingLoc"
-            android:label="Filming Locations"
-            />
+            android:label="Filming Locations" />
 
         <activity
             android:name=".About"
-            android:label="About Us"
-            />
+            android:label="About Us" />
 
     </application>
 
