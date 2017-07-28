@@ -42,4 +42,29 @@ public class FoodTruckMap extends AppCompatActivity  implements OnMapReadyCallba
                 .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
 
+        LatLng LeosTacoTruck = new LatLng(34.046400, -118.34569);
+        mMap.addMarker(new MarkerOptions().position(LeosTacoTruck).title("Leo's Taco Truck").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LeosTacoTruck, 12.0f));
+
+        LatLng TheLobos =new LatLng(34.097777, -118.28706);
+        mMap.addMarker(new MarkerOptions().position(TheLobos).title("The Lobos").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TheLobos, 12.0f));
+
+        LatLng SonofaBun =new LatLng(34.097777, -118.28706);
+        mMap.addMarker(new MarkerOptions().position(SonofaBun).title("Son of a Bun").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SonofaBun, 12.0f));
+
+        LatLng ElChatoTacoTruck =new LatLng(34.056889, -118.346233);
+        mMap.addMarker(new MarkerOptions().position(ElChatoTacoTruck).title("El Chato Taco Truck").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ElChatoTacoTruck, 12.0f));
+
+        LatLng TheFeedingFrnzy =new LatLng(34.047600, -118.253495);
+        mMap.addMarker(new MarkerOptions().position(TheFeedingFrnzy).title("The Feeding Frnzy").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TheFeedingFrnzy, 12.0f));
+
     }}
