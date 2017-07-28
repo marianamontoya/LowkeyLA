@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E1315B</color>
-    <color name="colorPrimaryDark">#008DCB</color>
+    <color name="colorPrimary">#66A5AD</color>
+    <color name="colorPrimaryDark">#021C1E</color>
     <color name="colorAccent">#FFEC5C</color>
     <color name="colorIcon">#8080FF</color>
     <color name="colorSide">#4D0026</color>
@@ -15,4 +15,6 @@
     <color name="colorBlue">#1F4788</color>
     <color name="colorMagenta">#FF00FF</color>
     <color name="colorYellow">#F4D03F</color>
+    <color name="colorAqua">#003B46</color>
+    <color name="colorOcean">#07575B</color>
 </resources>
