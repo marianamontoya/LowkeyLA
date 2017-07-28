@@ -37,9 +37,16 @@ public class PictureMap extends AppCompatActivity implements OnMapReadyCallback 
 
         // Add a marker in Sydney and move the camera
 
-        LatLng KazuNori = new LatLng(34.047700, -118.247882);
-        mMap.addMarker(new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
-                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
+        LatLng Instagram=new LatLng(34.048595, -118.241231);
+        mMap.addMarker(new MarkerOptions().position(Instagram).title("'Please Do Not Instagram This.' Mural").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Instagram,12.0f));
+
+        LatLng California=new LatLng(34.024526,-118.372906);
+        mMap.addMarker(new MarkerOptions().position(California).title("'California Dreaming' Mural").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(California,12.0f));
+
+        LatLng Love=new LatLng(34.023586, -118.381827);
+        mMap.addMarker(new MarkerOptions().position(Love).title("'Love' Mural").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Love,12.0f));
 
     }}
