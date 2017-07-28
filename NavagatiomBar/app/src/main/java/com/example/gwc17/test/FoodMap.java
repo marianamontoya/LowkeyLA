@@ -45,9 +45,52 @@ public class FoodMap extends AppCompatActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-33.852, 151.211);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+        LatLng KazuNori = new LatLng(34.047700, -118.247882);
+        mMap.addMarker(new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
+
+        LatLng GrandCentralMarket =new LatLng(34.050655, -118.248795);
+        mMap.addMarker(new MarkerOptions().position(GrandCentralMarket).title("Grand Central Market").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(GrandCentralMarket, 12.0f));
+
+        LatLng Birdies =new LatLng(34.041769, -118.259048);
+        mMap.addMarker(new MarkerOptions().position(Birdies).title("Birdies").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Birdies, 12.0f));
+
+        LatLng UmamiBurgerBroadway =new LatLng(34.042400, -118.255606);
+        mMap.addMarker(new MarkerOptions().position(UmamiBurgerBroadway).title("Umami Burger Broadway").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(UmamiBurgerBroadway, 12.0f));
+
+        LatLng GoldenStateCafe =new LatLng(34.078998, -118.361336);
+        mMap.addMarker(new MarkerOptions().position(GoldenStateCafe).title("GoldenStateCafe").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(GoldenStateCafe, 12.0f));
+
+        LatLng Animal =new LatLng(34.079217, -118.361604);
+        mMap.addMarker(new MarkerOptions().position(Animal).title("Animal Restaurant").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Animal, 12.0f));
+
+        LatLng Burgerlords =new LatLng(34.065207, -118.237149);
+        mMap.addMarker(new MarkerOptions().position(Burgerlords).title("Burgerlords").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Burgerlords, 12.0f));
+
+        LatLng Delilah =new LatLng(34.091064, -118.363581);
+        mMap.addMarker(new MarkerOptions().position(Delilah).title("Delilah").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Delilah, 12.0f));
+
+        LatLng Alma =new LatLng(34.095928, -118.371018);
+        mMap.addMarker(new MarkerOptions().position(Alma).title("Alma").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Alma, 12.0f));
+
 //        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
 //                .findFragmentById(R.id.map);
 //        mapFragment.getMapAsync(this);
