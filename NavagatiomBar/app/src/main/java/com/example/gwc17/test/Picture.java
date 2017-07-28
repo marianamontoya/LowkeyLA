@@ -44,7 +44,7 @@ public class Picture extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void createFoodTruckList() {
+    public void createPictureList() {
 
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
@@ -85,7 +85,7 @@ public class Picture extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        createFoodTruckList();
+        createPictureList();
         setContentView(R.layout.first_layout);
         listView = (ListView) findViewById(R.id.list);
 

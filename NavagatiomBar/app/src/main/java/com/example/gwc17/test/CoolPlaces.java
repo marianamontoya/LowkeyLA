@@ -10,8 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,5 +45,55 @@ public class CoolPlaces extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void createCoolPlacesList() {
+
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
+            String line;
+
+            String data = "";
+
+            line = reader.readLine(); //first line
+            while (!line.equals("COOL PLACES")) {
+                line = reader.readLine();
+            }
+            while (!line.equals("FILMING LOCATIONS")) {
+
+                if(line.isEmpty() || line.equals("COOL PLACES")) {
+                    if (data != "") {
+                        data+="\n";
+                        coolPlacesList.add(data);
+                        data = "";
+                    }
+                } else {
+                    if (data == "") {
+                        data += "\n";
+                        data += line.toUpperCase();
+                    } else {
+                        data += "\n\t"+line;
+                    }
+
+                }
+                line = reader.readLine();
+            }
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        createCoolPlacesList();
+        setContentView(R.layout.first_layout);
+        listView = (ListView) findViewById(R.id.list);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, coolPlacesList);
+
+        listView.setAdapter(adapter);
+
+    }
 
 }
