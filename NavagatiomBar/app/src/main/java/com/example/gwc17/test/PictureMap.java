@@ -49,4 +49,10 @@ public class PictureMap extends AppCompatActivity implements OnMapReadyCallback 
         mMap.addMarker(new MarkerOptions().position(Love).title("'Love' Mural").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Love,12.0f));
 
+        LatLng PinkWall=new LatLng(34.083947, -118.368785);
+        mMap.addMarker(new MarkerOptions().position(PinkWall).title("Pink Wall").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PinkWall,12.0f));
+
+
+
     }}

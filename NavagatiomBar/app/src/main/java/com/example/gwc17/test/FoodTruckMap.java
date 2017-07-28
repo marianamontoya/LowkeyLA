@@ -37,11 +37,6 @@ public class FoodTruckMap extends AppCompatActivity  implements OnMapReadyCallba
 
         // Add a marker in Sydney and move the camera
 
-        LatLng KazuNori = new LatLng(34.047700, -118.247882);
-        mMap.addMarker(new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
-                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
-
         LatLng LeosTacoTruck = new LatLng(34.046400, -118.34569);
         mMap.addMarker(new MarkerOptions().position(LeosTacoTruck).title("Leo's Taco Truck").icon(BitmapDescriptorFactory
                 .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
