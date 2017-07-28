@@ -29,7 +29,6 @@
         <activity
             android:name=".LowkeyLAMap"
             android:label="Lowkey LA Map" />
-
         <activity
             android:name=".Food"
             android:label="Restaurants" />
@@ -37,11 +36,12 @@
             android:name=".FoodMap"
             android:label="Restaurant Map">
 
-             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-             <!--</intent-filter>-->
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".FoodTrucks"
@@ -49,35 +49,30 @@
         <activity
             android:name=".FoodTruckMap"
             android:label="Food Truck Finder" />
-
         <activity
             android:name=".Picture"
             android:label="Picture Perfect" />
         <activity
             android:name=".PictureMap"
             android:label="Picture Location Map" />
-
         <activity
             android:name=".Museums"
             android:label="Museums" />
         <activity
             android:name=".MuseumMap"
             android:label="Museum Map" />
-
         <activity
             android:name=".CoolPlaces"
             android:label="Cool Places" />
         <activity
             android:name=".CoolPlacesMap"
             android:label="Cool Places Map" />
-
         <activity
             android:name=".FilmingLoc"
             android:label="Filming Locations" />
         <activity
             android:name=".FilmingLocMap"
             android:label="Filming Locations Map" />
-
         <activity
             android:name=".About"
             android:label="About Us" />
@@ -97,11 +92,22 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MapsActivity1"
+            android:label="@string/title_activity_maps1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
