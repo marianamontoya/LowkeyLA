@@ -34,11 +34,8 @@ public class Food extends AppCompatActivity {
 //        Log.d("mytag","inside");
 
         if (item.getItemId() == R.id.mapButton) {
-            Log.d("mytag","SELECTED");
             Intent i = new Intent(Food.this, FoodMap.class);
             startActivity(i);
-        } else {
-            Log.d("mytag","NOPE SELECTED");
         }
 
         return super.onOptionsItemSelected(item);

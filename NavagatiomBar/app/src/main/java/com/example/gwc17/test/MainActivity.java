@@ -76,9 +76,21 @@ public class MainActivity extends AppCompatActivity
 //            return true;
 //        }
 
+        if (item.getItemId() == R.id.mapButton) {
+            Intent i = new Intent(MainActivity.this, LowkeyLAMap.class);
+            startActivity(i);
+        }
 
         return super.onOptionsItemSelected(item);
     }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
