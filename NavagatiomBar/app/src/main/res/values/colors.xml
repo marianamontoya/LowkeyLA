@@ -5,4 +5,14 @@
     <color name="colorAccent">#FFEC5C</color>
     <color name="colorIcon">#8080FF</color>
     <color name="colorSide">#4D0026</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorMaroon">#800000</color>
+    <color name="colorNavy">#000080</color>
+    <color name="colorTeal">#008080</color>
+    <color name="colorOlive">#808000</color>
+    <color name="colorSeaShell">#FFF5EE</color>
+    <color name="colorAzure">#0066ff</color>
+    <color name="colorBlue">#1F4788</color>
+    <color name="colorMagenta">#FF00FF</color>
+    <color name="colorYellow">#F4D03F</color>
 </resources>
