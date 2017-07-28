@@ -27,6 +27,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LowkeyLAMap"
+            android:label="Lowkey LA Map" />
+
+        <activity
             android:name=".Food"
             android:label="Restaurants" />
         <activity
@@ -42,17 +46,37 @@
             android:name=".FoodTrucks"
             android:label="Food Trucks" />
         <activity
+            android:name=".FoodTruckMap"
+            android:label="Food Truck Map" />
+
+        <activity
             android:name=".Picture"
             android:label="Picture Perfect" />
+        <activity
+            android:name=".PictureMap"
+            android:label="Picture Location Map" />
+
         <activity
             android:name=".Museums"
             android:label="Museums" />
         <activity
+            android:name=".MuseumMap"
+            android:label="Museum Map" />
+
+        <activity
             android:name=".CoolPlaces"
             android:label="Cool Places" />
         <activity
+            android:name=".CoolPlacesMap"
+            android:label="Cool Places Map" />
+
+        <activity
             android:name=".FilmingLoc"
             android:label="Filming Locations" />
+        <activity
+            android:name=".FilmingLocMap"
+            android:label="Filming Locations Map" />
+
         <activity
             android:name=".About"
             android:label="About Us" />

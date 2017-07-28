@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/mapButton"
-        android:icon="@drawable/ic_map"
+        android:icon="@drawable/ic_action_mapnouppercase"
         android:title="Map"
         app:showAsAction="always" />
         />
