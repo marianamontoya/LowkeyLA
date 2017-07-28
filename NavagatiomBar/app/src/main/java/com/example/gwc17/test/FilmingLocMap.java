@@ -37,9 +37,25 @@ public class FilmingLocMap extends AppCompatActivity implements OnMapReadyCallba
 
         // Add a marker in Sydney and move the camera
 
-        LatLng KazuNori = new LatLng(34.047700, -118.247882);
-        mMap.addMarker(new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
-                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
-        {
-}}}
+        LatLng Summer=new LatLng(34.0563, 118.2468);
+        mMap.addMarker(new MarkerOptions().position(Summer).title("500 Days Summer").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Summer,12.0f));
+
+        LatLng PrettyWoman=new LatLng(34.047829, -118.254875);
+        mMap.addMarker(new MarkerOptions().position(PrettyWoman).title("Pretty Woman").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PrettyWoman,12.0f));
+
+        LatLng Independence=new LatLng(34.054507, -118.250261);
+        mMap.addMarker(new MarkerOptions().position(Independence).title("Independence Day").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Independence,12.0f));
+
+        LatLng Clueless=new LatLng(34.127357, -118.2105);
+        mMap.addMarker(new MarkerOptions().position(Clueless).title("Clueless").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Clueless,12.0f));
+
+        LatLng DayOff=new LatLng(34.127357, -118.2105);
+        mMap.addMarker(new MarkerOptions().position(DayOff).title("Ferris Buller’s Day Off").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DayOff,12.0f));
+
+
+    }}
