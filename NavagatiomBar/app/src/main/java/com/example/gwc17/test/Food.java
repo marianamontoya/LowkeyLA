@@ -33,9 +33,6 @@ import java.io.IOException;
 
 public class Food extends AppCompatActivity {
 
-    private View myView;
-//    private String[] restaurants = new String[] {"test1\ntest0","test2"};
-//    private String[] restaurants = new String[]{};
     private List<String> restaurantList = new ArrayList<>();
     private ListView listView;
 
@@ -58,40 +55,21 @@ public class Food extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //remove?
-//    @Nullable
-////    @Override
-//    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-//        myView = inflater.inflate(R.layout.first_layout, container, false);
-//        return myView;
-//
-//    }
 
-
-    public List<String> createFoodList() {
-
-        ArrayList<String> arr = new ArrayList<String>();
-//        final String dir = System.getProperty("user.dir");
-//        Log.d("mytag","current dir = " + dir);
-//        System.out.println("current dir = " + dir);
+    public void createFoodList() {
 
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
             String line;
-//            Log.e("Reader Stuff",reader.readLine());
 
             String data = "";
-//            while ((line = reader.readLine()) != null) {
-            line = reader.readLine();//restaurants
+            line = reader.readLine(); //first line
             while (!line.equals("MUSEUMS")) {
-                Log.d("test",line);
 
-//                if (line == null || line.isEmpty() || line.equals("RESTAURANTS")) {
                 if(line.isEmpty() || line.equals("RESTAURANTS")) {
                     if (data != "") {
                         data+="\n";
                         restaurantList.add(data);
-//                        Log.d("test","done");
                         data = "";
                     }
                 } else {
@@ -105,27 +83,20 @@ public class Food extends AppCompatActivity {
                 }
                 line = reader.readLine();
             }
-//            restaurantList.add(data);
 
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-
-//        Log.d("test","check");
-//        return restaurants;
-        return  restaurantList;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        createFoodList();// restraunts = createFoodList();
-
+        createFoodList();
         setContentView(R.layout.first_layout);
         listView = (ListView) findViewById(R.id.list);
 
-//        Log.d("check",restaurants.toString());
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, restaurantList);
 
         listView.setAdapter(adapter);
