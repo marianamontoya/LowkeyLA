@@ -1,0 +1,13 @@
+RESTAURANTS
+
+Name
+Description
+Address
+Phone
+Menu (website link)
+
+Name
+Description
+Address
+Phone
+Menu (website link)
