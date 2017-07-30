@@ -22,8 +22,7 @@
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/colorWhite"
         tools:layout_editor_absoluteY="464dp"
-        tools:layout_editor_absoluteX="95dp"
-        app:layout_constraintBottom_toTopOf="@id/google_maps" />
+        tools:layout_editor_absoluteX="95dp"/>
 
     <TextView
         android:layout_width="368dp"
