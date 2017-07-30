@@ -49,4 +49,46 @@ public class PictureMap extends AppCompatActivity implements OnMapReadyCallback 
         mMap.addMarker(new MarkerOptions().position(Love).title("'Love' Mural").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Love,12.0f));
 
+        LatLng PinkWall=new LatLng(34.083947, -118.368785);
+        mMap.addMarker(new MarkerOptions().position(PinkWall).title("Pink Wall").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PinkWall,12.0f));
+
+
+        LatLng TechnicolorOoze=new LatLng(34.026917, -118.387782);
+        mMap.addMarker(new MarkerOptions().position(TechnicolorOoze).title("Technicolor Ooze").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TechnicolorOoze, 12.0f));
+
+        LatLng PolkaDotWall=new LatLng(34.037720, -118.232236);
+        mMap.addMarker(new MarkerOptions().position(PolkaDotWall).title("Polka Dot Wall").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PolkaDotWall, 12.0f));
+
+        LatLng MondrianWall=new LatLng(34.047220, -118.375967);
+        mMap.addMarker(new MarkerOptions().position(MondrianWall).title("Mondrian Wall").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MondrianWall, 12.0f));
+
+        LatLng  Figure8=new LatLng(34.095254, -118.28374);
+        mMap.addMarker(new MarkerOptions().position(Figure8).title("Figure 8").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Figure8, 12.0f));
+
+        LatLng  ArtShareBuilding=new LatLng(34.044533, -118.236718);
+        mMap.addMarker(new MarkerOptions().position(ArtShareBuilding).title("Art Share Building").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ArtShareBuilding, 12.0f));
+
+        LatLng  MadeinLA=new LatLng(34.044533, -118.236718);
+        mMap.addMarker(new MarkerOptions().position(MadeinLA).title("Made in LA").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MadeinLA, 12.0f));
+
+        LatLng  LookIntoMyEyes=new LatLng(34.044533, -118.236718);
+        mMap.addMarker(new MarkerOptions().position(LookIntoMyEyes).title("Look Into My Eyes").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LookIntoMyEyes, 12.0f));
+
+
+
     }}
