@@ -18,8 +18,20 @@ import android.app.FragmentManager;
 import android.util.Log;
 import android.content.Intent;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.List;
+
+import java.util.ArrayList;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+//    public List<Map<String,String>> locationData = new ArrayList();
+    public List<List<Object>> locationData = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +39,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        createLocationData();
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -132,5 +146,66 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void createLocationData() {
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
+            String line;
+
+            line = reader.readLine(); //first line
+
+            List<Object> stuff = new ArrayList();
+            int counter = 0;
+            String name = "";
+            Map <String,String> data = new HashMap<String,String>();
+
+            while (line != null) {
+
+                if(line.isEmpty() || line.equals("RESTAURANTS") || line.equals("MUSEUMS") || line.equals("COOL PLACES")
+                        || line.equals("FILMING LOCATIONS") || line.equals("PICTURE PERFECT") || line.equals("TACO TRUCK")){
+                    if (name != "") {
+
+                        stuff.add(name);
+                        stuff.add(data);
+                        counter = 0;
+                        locationData.add(stuff);
+
+//                        Log.d("NAME", name);
+//                        for (Map.Entry entry : data.entrySet()) {
+//                            Log.d("DATA", entry.getKey() + ", " + entry.getValue());
+//                        }
+
+                        name = "";
+                        data = new HashMap<String,String>();
+                        stuff = new ArrayList();
+                    }
+                } else {
+
+                    if (name == "") {
+                        name = line;
+                    } else if (counter == 1) {
+                        data.put("Latitude", line);
+                    } else if (counter == 2) {
+                        data.put("Longitude", line);
+                    } else {
+                        if (line.charAt(0) == '(') { //phone number
+                            data.put("Phone", line);
+                        } else if (Character.isDigit(line.charAt(0))) { //address
+                            data.put("Address", line);
+                        } else if (line.charAt(line.length() - 1) == ')') { //description
+                            data.put("Description", line);
+                        } else { //website
+                            data.put("Website", line);
+                        }
+                    }
+                    counter ++;
+                }
+                line = reader.readLine();
+            }
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }
