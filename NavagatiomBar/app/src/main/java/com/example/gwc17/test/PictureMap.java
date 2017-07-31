@@ -60,6 +60,7 @@ public class PictureMap extends AppCompatActivity implements OnMapReadyCallback 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TechnicolorOoze, 12.0f));
 
         LatLng PolkaDotWall=new LatLng(34.037720, -118.232236);
+
         mMap.addMarker(new MarkerOptions().position(PolkaDotWall).title("Polka Dot Wall").icon(BitmapDescriptorFactory
                 .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PolkaDotWall, 12.0f));
@@ -88,6 +89,38 @@ public class PictureMap extends AppCompatActivity implements OnMapReadyCallback 
         mMap.addMarker(new MarkerOptions().position(LookIntoMyEyes).title("Look Into My Eyes").icon(BitmapDescriptorFactory
                 .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LookIntoMyEyes, 12.0f));
+
+        LatLng MuralbyRetna=new LatLng(34.080620, -118.386518);
+        mMap.addMarker(new MarkerOptions().position(MuralbyRetna).title("Mural by Retna").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MuralbyRetna, 12.0f));
+
+        LatLng JustInCase=new LatLng(34.085553, -118.361136);
+        mMap.addMarker(new MarkerOptions().position(JustInCase).title("Just In Case").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(JustInCase, 12.0f));
+
+        LatLng Uniwolfcheetah=new LatLng(33.990497, -118.464965);
+        mMap.addMarker(new MarkerOptions().position(Uniwolfcheetah).title("Uniwolfcheetah").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Uniwolfcheetah, 12.0f));
+
+        LatLng MuralbehindWylieWilsonboutique=new LatLng(33.991460, -118.468019);
+        mMap.addMarker(new MarkerOptions().position(MuralbehindWylieWilsonboutique).title("Mural behind Wylie Wilson boutique").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MuralbehindWylieWilsonboutique, 12.0f));
+
+        LatLng ArtbyROA=new LatLng(34.036290, -118.231394);
+        mMap.addMarker(new MarkerOptions().position(ArtbyROA).title("Art by ROA").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ArtbyROA, 12.0f));
+
+        LatLng squarefootmuralbyKobra=new LatLng(34.036290, -118.231394);
+        mMap.addMarker(new MarkerOptions().position(squarefootmuralbyKobra).title("4,300-square-foot mural by Kobra").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(squarefootmuralbyKobra, 12.0f));
+
+
 
 
 
