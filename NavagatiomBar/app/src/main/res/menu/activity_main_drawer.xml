@@ -4,34 +4,34 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/restaurantsNav"
-            android:icon="@drawable/ic_local_dining_black_24dp"
-            android:title="Restaurants" />
+            android:icon="@drawable/ic_action_dining"
+            android:title="@string/food" />
         <item
             android:id="@+id/foodTrucksNav"
             android:icon="@drawable/ic_action_food1"
             android:titleTextColor="@color/colorPrimary"
-            android:title="Food Trucks" />
+            android:title="@string/food_truck" />
         <item
             android:id="@+id/picturePerfectNav"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Picture Perfect" />
+            android:icon="@drawable/ic_action_camera"
+            android:title="@string/pic_perfect" />
         <item
             android:id="@+id/museumsNav"
             android:icon="@drawable/ic_action_bank"
-            android:title="Museums" />
+            android:title="@string/museums" />
 
         <item
             android:id="@+id/coolPlacesNav"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Cool PLaces" />
+            android:icon="@drawable/ic_action_sun"
+            android:title="@string/cool_places" />
         <item
             android:id="@+id/filmingNav"
-            android:icon="@drawable/ic_action_movie"
-            android:title="Filming Locations" />
+            android:icon="@drawable/ic_action_film"
+            android:title="@string/film" />
         <item
             android:id="@+id/aboutNav"
-            android:icon="@drawable/ic_action_bout"
-            android:title="About Us" />
+            android:icon="@drawable/ic_action_question"
+            android:title="@string/about_us" />
     </group>
 
 </menu>

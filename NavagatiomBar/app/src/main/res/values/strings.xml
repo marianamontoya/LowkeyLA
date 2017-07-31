@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">Lowkey LA</string>
+    <string name="created">Created By: Down To Code</string>
+    <string name="google_maps">Click This Button To Go To Google Maps</string>
+    <string name="google_current">After Selecting The Map Click This Button To Get Directions From Your Current Location</string>
+    <string name="help">Helpful Tips</string>
+
+    <string name="food">Restaurants</string>
+    <string name="food_truck">Food Trucks</string>
+    <string name="pic_perfect">Picture Perfect</string>
+    <string name="museums">Museums</string>
+    <string name="cool_places">Cool Places</string>
+    <string name="film">Filming Locations</string>
+    <string name="about_us">About Us</string>
+
+    <string name="map">Map</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
