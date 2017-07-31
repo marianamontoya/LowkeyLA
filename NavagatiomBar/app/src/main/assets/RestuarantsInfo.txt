@@ -1,4 +1,4 @@
-﻿RESTAURANTS
+RESTAURANTS
 
 KazuNori
 Famous for their original hand roll bar($)
@@ -6,7 +6,6 @@ Famous for their original hand roll bar($)
 (213) 493-6956
 places.singleplatform.com
 (34.047700, -118.247882)
-
 
 Grand Central Market
 A unique Los Angeles native food market (price varies)
@@ -152,9 +151,8 @@ Koreatown Mall
 928 S Western Ave, Los Angeles, CA 90006
 (34.055136, -118.308628)
 
-
 Electric Dusk Drive-in 
-Van de Kamp Bakery Building, 2930 Fletcher Dr, Los Angeles, CA 90065
+*Van de Kamp Bakery Building, 2930 Fletcher Dr, Los Angeles, CA 90065
 (34.113893, -118.246678)
 
 Street Food Cinema
@@ -178,7 +176,7 @@ American Horror Story Murder House
 
 FILMING LOCATIONS
 
-500 Days of Summmer
+500 Days of Summer
 200 N Grand Ave, Los Angeles, CA 90012
 http://www.imdb.com/title/tt1022603
 (34.056280, -118.246743)
@@ -214,27 +212,27 @@ Love Mural
 (34.023586, -118.381827)
 
 Mondrian Wall
-Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
+*Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
 (34.047220, -118.375967)
 
 Made in LA
-Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
+*Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
 (34.083917, -118.364733)
 
 Angel Wings
-St. Regis Wine & Liquor, 8401 W. 3rd St. (at S. Orlando Avenue), Beverly Grove
+*St. Regis Wine & Liquor, 8401 W. 3rd St. (at S. Orlando Avenue), Beverly Grove
 (34.073179, -118.373295)
 
 Polka dot
-The Springs, 608 Mateo St., DTLA Arts District
+*The Springs, 608 Mateo St., DTLA Arts District
 (34.037720, -118.232236)
 
 Mondrian wall
-Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
+*Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
 (34.047220, -118.375967)
 
 Mural made famous by Elliott Smith's Figure 8 album cover
-Solutions!, 4334 W Sunset Blvd., Silver Lake
+*Solutions!, 4334 W Sunset Blvd., Silver Lake
 (34.044533, -118.236718)
 
 Art Share building mural by Insa
@@ -242,31 +240,31 @@ Art Share building mural by Insa
 (34.044533, -118.236718)
 
 "Made in LA" at Cisco Home
-Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
+*Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
 (34.083917, -118.364733)
 
- "Look Into My Eyes" by D*Face
-The Line Hotel, 3515 Wilshire Blvd. (at S. Ardmore Avenue), K-Town
+"Look Into My Eyes" by D*Face
+*The Line Hotel, 3515 Wilshire Blvd. (at S. Ardmore Avenue), K-Town
 (34.062071, -118.301033)
 
 Mural by Retna
-Craig's, 8826 Melrose Ave., West Hollywood
+*Craig's, 8826 Melrose Ave., West Hollywood
 (34.080620, -118.386518)
 
 "Just In Case" by Bumblebee
-Majestic Flowers, 800 North Fairfax Ave. (at Waring Avenue), Fairfax
+*Majestic Flowers, 800 North Fairfax Ave. (at Waring Avenue), Fairfax
 (34.085553, -118.361136)
 
- "Uniwolfcheetah" by Diana Garcia
-Gjelina, 1429 Abbot Kinney Blvd. (at Milwood Avenue), Venice
+"Uniwolfcheetah" by Diana Garcia
+*Gjelina, 1429 Abbot Kinney Blvd. (at Milwood Avenue), Venice
 (33.990497, -118.464965)
 
 Mural behind Wylie Wilson boutique, artist unknown
 490 Santa Clara Ave. (between Electric Avenue & Abbot Kinney), Venice
 (33.991460, -118.468019)
 
- Art by ROA
-Jesse Street & Imperial Avenue, DTLA Arts District
+Art by ROA
+*Jesse Street & Imperial Avenue, DTLA Arts District
 (34.036290, -118.231394)
 
 

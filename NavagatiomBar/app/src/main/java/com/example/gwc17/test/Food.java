@@ -38,10 +38,12 @@ import java.util.Map;
 
 public class Food extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private List<String> restaurantList = new ArrayList<>();
-    private ListView listView;
+//    private List<String> restaurantList = new ArrayList<>();
+//    private ListView listView;
 
     private HashMap<String, String> restaurantInfo = new HashMap<>();
+    private List<HashMap<String, String>> listItems = new ArrayList<>();
+    private List<String> listOrder = new ArrayList<>();
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,38 +64,38 @@ public class Food extends AppCompatActivity implements AdapterView.OnItemClickLi
     }
 
 
-    public void createFoodList() {
-
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
-            String line;
-
-            String data = "";
-            line = reader.readLine(); //first line
-            while (!line.equals("MUSEUMS")) {
-
-                if(line.isEmpty() || line.equals("RESTAURANTS")) {
-                    if (data != "") {
-                        data+="\n";
-                        restaurantList.add(data);
-                        data = "";
-                    }
-                } else {
-                    if (data == "") {
-                        data += "\n";
-                        data += line.toUpperCase();
-                    } else {
-                        data += "\n\t"+line;
-                    }
-
-                }
-                line = reader.readLine();
-            }
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
+//    public void createFoodList() {
+//
+//        try {
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
+//            String line;
+//
+//            String data = "";
+//            line = reader.readLine(); //first line
+//            while (!line.equals("MUSEUMS")) {
+//
+//                if(line.isEmpty() || line.equals("RESTAURANTS")) {
+//                    if (data != "") {
+//                        data+="\n";
+//                        restaurantList.add(data);
+//                        data = "";
+//                    }
+//                } else {
+//                    if (data == "") {
+//                        data += "\n";
+//                        data += line.toUpperCase();
+//                    } else {
+//                        data += "\n\t"+line;
+//                    }
+//
+//                }
+//                line = reader.readLine();
+//            }
+//
+//        } catch (IOException ex) {
+//            ex.printStackTrace();
+//        }
+//    }
 
     public void createFoodMap() {
 
@@ -152,11 +154,11 @@ public class Food extends AppCompatActivity implements AdapterView.OnItemClickLi
 
         createFoodMap();
 
-        for (Map.Entry entry : restaurantInfo.entrySet()) {
-            Log.d("DATA", entry.getKey() + ", " + entry.getValue());
-        }
+//        for (Map.Entry entry : restaurantInfo.entrySet()) {
+//            Log.d("DATA", entry.getKey() + ", " + entry.getValue());
+//        }
 
-        List<HashMap<String, String>> listItems = new ArrayList<>();
+        listItems = new ArrayList<>();
         SimpleAdapter adapter = new SimpleAdapter(this, listItems, R.layout.list_item,
                 new String[]{"First Line", "Second Line"},
                 new int[]{R.id.text1, R.id.text2});
@@ -170,6 +172,7 @@ public class Food extends AppCompatActivity implements AdapterView.OnItemClickLi
             resultsMap.put("First Line", pair.getKey().toString());
             resultsMap.put("Second Line", pair.getValue().toString());
             listItems.add(resultsMap);
+            listOrder.add(pair.getKey().toString());
         }
 
 //        if (resultsListView == null) {
@@ -183,13 +186,17 @@ public class Food extends AppCompatActivity implements AdapterView.OnItemClickLi
 //            Log.d("null", "adapter NOT null");
 //        }
         resultsListView.setAdapter(adapter);
+
+        resultsListView.setOnItemClickListener(this);
     }
 
     public void onItemClick(AdapterView<?> l, View v, int position, long id) {
         Intent intent = new Intent();
         intent.setClass(this, SpecificMap.class);
         intent.putExtra("position", position);
-        intent.putExtra("id", id);
+        intent.putExtra("name",listOrder.get(position));
+
+//        Log.d("POS TEST",listOrder.get(position));
         startActivity(intent);
     }
 }

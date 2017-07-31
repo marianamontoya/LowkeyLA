@@ -14,12 +14,19 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by jessicahoffman on 7/31/17.
  */
 
 public class SpecificMap extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
+
+    private String name;
+    private double latitude;
+    private double longitude;
 
     @Override
 
@@ -29,17 +36,29 @@ public class SpecificMap extends AppCompatActivity implements OnMapReadyCallback
 //        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
 //            mMap.setMyLocationEnabled(true);
 
+
+
         Intent intent = getIntent();
         int position = intent.getIntExtra("position", 0);
-        int id = intent.getIntExtra("id", 0);
-        Log.d("position extra", String.valueOf(position));
-        Log.d("id extra", String.valueOf(id));
+        name = intent.getStringExtra("name");
 
-        // Here we turn your string.xml in an array
-//        String[] myKeys = getResources().getStringArray(R.array.sections);
 
-//        TextView myTextView = (TextView) findViewById(R.id.my_textview);
-//        myTextView.setText(myKeys[position]);
+        for (int i = 0; i < MainActivity.locationData.size(); i++) {
+            if (name.equals(MainActivity.locationData.get(i).get(0))) {
+//                Log.e("FOUND", name);
+
+                Map<String,String> data = (HashMap) MainActivity.locationData.get(i).get(1);
+
+                for (Map.Entry entry : data.entrySet()) {
+                    if (entry.getKey().equals("Latitude")) {
+                        latitude = Double.parseDouble((String) entry.getValue());
+//                        Log.e("FOUND LA", (String) entry.getValue());
+                    } else if (entry.getKey().equals("Longitude")) {
+                        longitude = Double.parseDouble((String) entry.getValue());
+                    }
+                }
+            }
+        }
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -51,12 +70,10 @@ public class SpecificMap extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-
-        LatLng LeosTacoTruck = new LatLng(34.046400, -118.34569);
-        mMap.addMarker(new MarkerOptions().position(LeosTacoTruck).title("Leo's Taco Truck").icon(BitmapDescriptorFactory
-                .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LeosTacoTruck, 12.0f));
+        LatLng hotspot = new LatLng(latitude, longitude);
+        mMap.addMarker(new MarkerOptions().position(hotspot).title(name).icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(hotspot, 12.0f));
 
     }
 }
