@@ -22,4 +22,11 @@ public class About extends AppCompatActivity {
         return myView;
 
     }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_sevenfrag);
+    }
+
 }
