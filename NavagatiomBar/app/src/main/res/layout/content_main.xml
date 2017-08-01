@@ -8,15 +8,15 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingLeft="16dp"
-    android:background="@color/colorAqua"
+    android:background="@color/colorlightblue"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.gwc17.test.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -24,15 +24,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:orientation="vertical"
+            android:weightSum="1">
 
-    <TextView
+
+            <View
+                android:id="@+id/abovewelcome"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
+
+            <TextView
         android:id="@+id/editText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,112 +99,71 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp" />
 
-    <View
-        android:id="@+id/next1"
-        android:layout_width="80dp"
-        android:layout_height="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorAzure"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22000003" />
+            <TextView
+                android:id="@+id/editText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Lowkey LA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998" />
 
-    <View
-        android:id="@+id/next2"
-        android:layout_width="80dp"
-        android:layout_height="8dp"
-        android:background="@color/colorAzure"
-        android:layout_marginRight="24dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.22000003"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp" />
+            <View
+                android:id="@+id/belowLA"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.74"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
-    <View
-        android:id="@+id/belowLA"
-        android:layout_width="0dp"
-        android:layout_height="10dp"
-        android:background="@color/colorWhite"
-        android:layout_marginRight="24dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp" />
-    <View
-        android:id="@+id/abovewelcome"
-        android:layout_width="0dp"
-        android:layout_height="10dp"
-        android:background="@color/colorWhite"
-        android:layout_marginRight="24dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.43"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="24dp" />
+            <ImageView
+                android:id="@+id/LA"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:src="@drawable/la_back" />
 
-    <TextView
-        android:id="@+id/editText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Lowkey LA"
-        android:fontFamily="serif-monospace"
-        android:textColor="@color/colorWhite"
-        android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.32999998"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
-
-    <TextView
-        android:id="@+id/editText10"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:ems="10"
-        android:gravity="center"
-        android:padding="5dp"
+            <TextView
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Down To Code built this app to solve the problem of looking like an outsider, an outcast, and worst of all looking like a tourist. We want people to take advantage of our app to get out of there comfort zone and go out and explore new places. So with Lowkey LA you will be able to fit in, know all the hidden treasure spots of Los Angeles and leave your comfort zone."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" /><![CDATA[
 
         android:inputType="textMultiLine"
         android:text="Down To Code built this app to solve the problem of looking like an outsider, an outcast, and worst of all looking like a tourist. We want people to take advantage of our app to get out of there comfort zone and go out and explore new places. So with Lowkey LA you will be able to fit in, know all the hidden treasure spots of Los Angeles and leave your comfort zone."
         android:textAppearance="@android:style/TextAppearance.Widget.TextView"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorDavyGrey"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -194,5 +174,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         android:layout_marginEnd="8dp" />
+
+
+        ]]>
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

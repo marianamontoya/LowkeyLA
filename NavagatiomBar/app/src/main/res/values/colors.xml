@@ -18,4 +18,8 @@
     <color name="colorAqua">#003B46</color>
     <color name="colorOcean">#07575B</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorlightblue">#CEE7E6</color>
+    <color name="colorGrey">#6D7072</color>
+    <color name="colorDavyGrey">#545759</color>
+
 </resources>
