@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 //    public List<Map<String,String>> locationData = new ArrayList();
-    public List<List<Object>> locationData = new ArrayList();
+    public static List<List<Object>> locationData = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity
 
                         stuff.add(name);
                         stuff.add(data);
-                        counter = 0;
+//                        counter = 0;
                         locationData.add(stuff);
 
 //                        Log.d("NAME", name);
@@ -184,17 +184,25 @@ public class MainActivity extends AppCompatActivity
 
                     if (name == "") {
                         name = line;
-                    } else if (counter == 1) {
-                        data.put("Latitude", line);
-                    } else if (counter == 2) {
-                        data.put("Longitude", line);
+//                    } else if (counter == 1) {
+//                        data.put("Latitude", line);
+//                    } else if (counter == 2) {
+//                        data.put("Longitude", line);
                     } else {
-                        if (line.charAt(0) == '(') { //phone number
+                        if (line.charAt(4) == ')') { //phone number
                             data.put("Phone", line);
                         } else if (Character.isDigit(line.charAt(0))) { //address
                             data.put("Address", line);
-                        } else if (line.charAt(line.length() - 1) == ')') { //description
+                        } else if (line.charAt(0) == '*') { //address
+                            data.put("Address", line.substring(1));
+                        } else if (line.charAt(line.length() - 2) == '$') { //description
                             data.put("Description", line);
+                        } else if (line.charAt(line.length() - 1) == ')') { //lat & long
+                            String a = line.substring(1,line.length()-2);
+                            String lat = a.substring(0,9);
+                            String lon = a.substring(11);
+                            data.put("Latitude", lat);
+                            data.put("Longitude", lon);
                         } else { //website
                             data.put("Website", line);
                         }

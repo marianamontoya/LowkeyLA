@@ -15,6 +15,38 @@
 
     <string name="map">Map</string>
 
+    <string name="down_to_code">Down To Code</string>
+    <string name="how_we_became">How We Became One</string>
+    <string name="mariana">Mariana</string>
+    <string name="charlene">Charlene</string>
+    <string name="emily">Emily</string>
+
+    <string name="purpose">Down To Code is a group of three that is made up of high
+        schoolers. We all come from different backgrounds as well as different lifestyles
+        having been brought together by Girls Who Code, a summer immersion program.Down To Code
+        built this app to solve the problem of looking like an outsider, an outcast, and worst of
+        all looking like a tourist. We want people to take advantage of our app to get out of
+        there comfort zone and go out and explore new places. So with Lowkey LA you will be
+        able to fit in, know all the hidden treasure spots of Los Angeles and leave your comfort zone.</string>
+    
+    <string name="personal">Down To Code is a group of three that is made up of high
+        schoolers. We all come from different backgrounds as well as different lifestyles
+        having been brought together by Girls Who Code, a summer immersion program. </string>
+
+    <string name="charlene_quote">Charlene is 17 years old and currently attending I-Poly
+        High School. She is currently a senior and enjoys working with her group as well
+        as exploring and trying new places in Los Angeles. </string>
+
+    <string name="emily_quote">Emily is 16 years old and is a senior at Culver City High School.
+        She plans to major in computer science and has a goal to pursue a career in cybersecurity.
+        She enjoys to meet new people and explore different places.</string>
+
+    <string name="mariana_quote">Mariana is a 17 year old. This summer program has made it her
+        best summer yet. She is currently a senior at IPoly High School. She enjoys to watch
+        Netflix. and trying out different things.</string>
+
+    <string name="about">About the Creators</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 

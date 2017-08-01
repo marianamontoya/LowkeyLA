@@ -10,26 +10,31 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by jessicahoffman on 7/27/17.
  */
 
-public class FoodTrucks extends AppCompatActivity {
+public class FoodTrucks extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private List<String> foodTruckList = new ArrayList<>();
-    private ListView listView;
+    private HashMap<String, String> foodTrucksInfo = new HashMap<>();
+    private List<HashMap<String, String>> listItems = new ArrayList<>();
+    private List<String> listOrder = new ArrayList<>();
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -41,16 +46,15 @@ public class FoodTrucks extends AppCompatActivity {
             Intent i = new Intent(FoodTrucks.this, FoodTruckMap.class);
             startActivity(i);
         }
-
         return super.onOptionsItemSelected(item);
     }
 
-    public void createFoodTruckList() {
+    public void createFoodTruckMap() {
 
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("RestuarantsInfo.txt")));
             String line;
-
+            String name = "";
             String data = "";
 
             line = reader.readLine(); //first line
@@ -62,17 +66,18 @@ public class FoodTrucks extends AppCompatActivity {
                 if(line.isEmpty() || line.equals("FOOD TRUCK")) {
                     if (data != "") {
                         data+="\n";
-                        foodTruckList.add(data);
+                        foodTrucksInfo.put(name,data);
+                        name = "";
                         data = "";
                     }
                 } else {
-                    if (data == "") {
-                        data += "\n";
-                        data += line.toUpperCase();
+                    if (name == "") {
+                        name = line;
+                    } else if (data == "") {
+                        data += line;
                     } else {
-                        data += "\n\t"+line;
+                        data += "\n"+line;
                     }
-
                 }
                 line = reader.readLine();
             }
@@ -86,14 +91,34 @@ public class FoodTrucks extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        createFoodTruckList();
-        setContentView(R.layout.first_layout);
-        listView = (ListView) findViewById(R.id.list);
+        setContentView(R.layout.fancy_list);
+        ListView resultsListView = (ListView) findViewById(R.id.results_listview);
+        createFoodTruckMap();
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foodTruckList);
+        listItems = new ArrayList<>();
+        SimpleAdapter adapter = new SimpleAdapter(this, listItems, R.layout.list_item,
+                new String[]{"First Line", "Second Line"},
+                new int[]{R.id.text1, R.id.text2});
 
-        listView.setAdapter(adapter);
-
+        Iterator it = foodTrucksInfo.entrySet().iterator();
+        while (it.hasNext())
+        {
+            HashMap<String, String> resultsMap = new HashMap<>();
+            Map.Entry pair = (Map.Entry)it.next();
+            resultsMap.put("First Line", pair.getKey().toString());
+            resultsMap.put("Second Line", pair.getValue().toString());
+            listItems.add(resultsMap);
+            listOrder.add(pair.getKey().toString());
+        }
+        resultsListView.setAdapter(adapter);
+        resultsListView.setOnItemClickListener(this);
     }
 
+    public void onItemClick(AdapterView<?> l, View v, int position, long id) {
+        Intent intent = new Intent();
+        intent.setClass(this, SpecificMap.class);
+        intent.putExtra("position", position);
+        intent.putExtra("name",listOrder.get(position));
+        startActivity(intent);
+    }
 }
