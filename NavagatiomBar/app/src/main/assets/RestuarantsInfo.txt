@@ -5,65 +5,76 @@ Famous for their original hand roll bar($)
 421 S Main St, Los Angeles, CA 90013
 (213) 493-6956
 places.singleplatform.com
+(34.047700, -118.247882)
 
-Homer Laughlin Building (Grand Central Market)
+Grand Central Market
 A unique Los Angeles native food market (price varies)
 317 S Broadway, Los Angeles, CA 90013
 (213) 624-2378
 http://www.grandcentralmarket.com/
+(34.050655, -118.248795)
 
 Birdies
 Not your usual donut shop ($)
 314 W Olympic Blvd, Los Angeles, CA 90015 
 (213) 536-5714
 http://birdiesla.com/list-menu/birdies-menu/
+(34.041769, -118.259048)
 
 Umami Burger Broadway
 Gourmet burgers and truffle fries make to your satisfaction ($$)
 852 S Broadway, Los Angeles, CA 90015
 (213) 413-8626
 umamiburger.com
+(34.042400, -118.255606)
 
 République
 Very local and extravagant place to dine ($$$)
 624 South La Brea Ave, Los Angeles, CA 90036
 (310) 362-6115
 republiquela.com
+(34.064158, -118.343679)
 
 The Golden State 
 California sourced hamburgers and hot dogs ($$)
 426 N Fairfax Ave, Los Angeles, CA 90036
 (323) 782-8331
 thegoldenstatecafe.com
+(34.078998, -118.361336)
 
 Alma at The Standard
 Chic American cuisine ($$$) 
 The Standard, Hollywood, 8300 Sunset Blvd., West, West Hollywood, CA 90069
 (323) 822-3131
+(34.095928, -118.371018)
 
 Animal Restaurant
 Famous for their offal specialties and other plates ($$)
 435 N Fairfax Ave, Los Angeles, CA 90036
 (323) 782-9225
 places.singleplatform.com
+(34.079217, -118.361604)
 
 Burgerlords
 In n Out is overrated TRY THIS ($)
 943 N Broadway #102, Los Angeles, CA 90012
 (323) 405-4012
 places.singleplatform.com
+(34.065207, -118.237149)
 
 Delilah
 Elegant place to dine in with a possible celebrity sighting ($$$)
 7969 California Route 2, West Hollywood, CA 90046
 (323) 745-0600
 http://www.delilahla.com/menus/
+(34.091064, -118.363581)
 
 Mel’s Drive:
-Good all classic 50s diner 
+Good all classic 50s diner ($$)
 8585 Sunset Boulevard, West Hollywood, CA 90069
 (310)854-7201
 http://melsdrive-in.com/menus 
+(34.092906, -118.378961)
 
 MUSEUMS
 
@@ -71,40 +82,48 @@ LACMA
 5905 Wilshire Blvd, Los Angeles, CA 90036
 (213) 763-3466
 http://www.lacma.org/
+(34.063791, -118.358885)
 
 Natural History Museum of Los Angeles County
 900 W Exposition Blvd, Los Angeles, CA 90007
 https://nhm.org/site/
+(34.063791, -118.358885)
 
 The Broad 
 221 S Grand Ave, Los Angeles, CA 90012
 (213) 232-6200
 https://www.thebroad.org/
+(34.054471, -118.250559)
 
 Griffith Observatory
 (213) 473-0800
 2800 E Observatory Rd, Los Angeles, CA 90027
 http://www.griffithobservatory.org/
+(34.118407, -118.300422)
 
 California Science Center 
 700 Exposition Park Dr, Los Angeles, CA 90037
 (323) 724-3623
 https://californiasciencecenter.org/
+(34.015788, -118.286209)
 
 Museum of Death
 6031 Hollywood Blvd, Hollywood, CA 90028
 (323) 466-8011
 http://www.museumofdeath.net/
+(34.101947, -118.321275)
 
 Museum of Tolerance 
 9786 W Pico Blvd, Los Angeles, CA 90035
 (310) 772-2505
 http://www.museumoftolerance.com/site/c.tmL6KfNVLtH/b.9052747/k.BEE4/Home.htm
+(34.053697, -118.401716)
 
 Hollywood Wax Museum
 6767 Hollywood Blvd, Los Angeles, CA 90028
 (323) 462-5991
 http://www.hollywoodwaxmuseum.com/hollywood/
+(34.101730, -118.338087)
 
 COOL PLACES
 
@@ -112,98 +131,161 @@ Escape Room LA
 120 E 8th St, Los Angeles, CA 90014
 (213) 689-3229
 http://www.escaperoomla.com/
+(34.042072, -118.252829)
 
 OUE Skyspace LA
 633 West Fifth Street #840, Los Angeles, CA 90071
 (213) 894-9000
 https://oue-skyspace.com/
+(34.051102, -118.25439)
 
 Abandoned LA Zoo
 4801 Griffith Park Dr, Los Angeles, CA 90027
+(34.135643, -118.28456)
 
 Little Tokyo
 119 Japanese Village Plz Mall, Los Angeles, CA 90012
+(34.049242, -118.239823)
 
 Koreatown Mall
 928 S Western Ave, Los Angeles, CA 90006
+(34.055136, -118.308628)
 
 Electric Dusk Drive-in 
-Van de Kamp Bakery Building, 2930 Fletcher Dr, Los Angeles, CA 90065
+*Van de Kamp Bakery Building, 2930 Fletcher Dr, Los Angeles, CA 90065
+(34.113893, -118.246678)
 
 Street Food Cinema
 1617 Colorado Blvd., Los Angeles, CA 90041
+(34.139754, -118.20166)
 
 The Last Book Store
 453 S Spring St, Los Angeles, CA 90013
 (213) 488-0599
 http://lastbookstorela.com/
+(34.047763, -118.249515)
 
 Galco's Old World Grocery
 5702 York Blvd, Los Angeles, CA 90042
 (323) 255-7115
+(34.118604, -118.193454)
 
 American Horror Story Murder House 
 1120 Westchester Pl Los Angeles, CA 90019
+(34.050000, -118.317253)
 
 FILMING LOCATIONS
 
-500 Days of Summmer
+500 Days of Summer
 200 N Grand Ave, Los Angeles, CA 90012
 http://www.imdb.com/title/tt1022603
+(34.056280, -118.246743)
 
 Pretty Woman
 617 S Olive St. Los Angeles, CA 90014
 http://www.imdb.com/title/tt0100405/?ref_=nv_sr_1
+(34.047829, -118.254875)
 
 Independence Day
 620 W 2nd St. Los Angeles, CA 90012
 http://www.imdb.com/title/tt0116629/?ref_=nv_sr_4
+(34.054507, -118.250261)
 
 Clueless
 1600 Campus Rd. Los Angeles, CA 90041
 http://www.imdb.com/title/tt0112697/?ref_=nv_sr_1
+(34.127357, -118.2105)
 
 Ferris Buller’s Day Off
 903 N La Cienega Blvd. Los Angeles, CA 90069
 http://www.imdb.com/title/tt0091042/?ref_=nv_sr_4
+(34.097098, -118.376626)
 
 PICTURE PERFECT
 
 Please Don't Instagram This
 326 E 2nd St, Los Angeles, CA 90012
+(34.048595, -118.241231)
 
 Love Mural
 8549 Higuera St. (Hayden Ave & Warner Drive), Culver City
+(34.023586, -118.381827)
 
 Mondrian Wall
-Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
+*Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
+(34.047220, -118.375967)
 
 Made in LA
-Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
+*Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
+(34.083917, -118.364733)
 
 Angel Wings
-St. Regis Wine & Liquor, 8401 W. 3rd St. (at S. Orlando Avenue), Beverly Grove
+*St. Regis Wine & Liquor, 8401 W. 3rd St. (at S. Orlando Avenue), Beverly Grove
+(34.073179, -118.373295)
 
 Polka dot
-The Springs, 608 Mateo St., DTLA Arts District
+*The Springs, 608 Mateo St., DTLA Arts District
+(34.037720, -118.232236)
+
+Mondrian wall
+*Artist & Craftsman Supply, 1660 S. La Cienega Blvd., Los Angeles
+(34.047220, -118.375967)
+
+Mural made famous by Elliott Smith's Figure 8 album cover
+*Solutions!, 4334 W Sunset Blvd., Silver Lake
+(34.044533, -118.236718)
+
+Art Share building mural by Insa
+801 E. 4th Place (at S Hewitt Street), DTLA Arts District
+(34.044533, -118.236718)
+
+"Made in LA" at Cisco Home
+*Cisco Home, 8025 Melrose Ave. (at N Laurel Avenue), West Hollywood
+(34.083917, -118.364733)
+
+"Look Into My Eyes" by D*Face
+*The Line Hotel, 3515 Wilshire Blvd. (at S. Ardmore Avenue), K-Town
+(34.062071, -118.301033)
+
+Mural by Retna
+*Craig's, 8826 Melrose Ave., West Hollywood
+(34.080620, -118.386518)
+
+"Just In Case" by Bumblebee
+*Majestic Flowers, 800 North Fairfax Ave. (at Waring Avenue), Fairfax
+(34.085553, -118.361136)
+
+"Uniwolfcheetah" by Diana Garcia
+*Gjelina, 1429 Abbot Kinney Blvd. (at Milwood Avenue), Venice
+(33.990497, -118.464965)
+
+Mural behind Wylie Wilson boutique, artist unknown
+490 Santa Clara Ave. (between Electric Avenue & Abbot Kinney), Venice
+(33.991460, -118.468019)
+
+Art by ROA
+*Jesse Street & Imperial Avenue, DTLA Arts District
+(34.036290, -118.231394)
+
 
 FOOD TRUCK
 
 Leo's Taco Truck
 1515 S La Brea Ave Los Angeles, CA 90019
-(323) 346-2001
+(34.046400, -118.34569)
 
 The Lobos
 4470 W Sunset Blvd Los Angeles, CA 90027
-(323) 642-6500
+(34.097777, -118.28706)
 
 Son of a Bun
 4470 W Sunset Blvd Los Angeles, CA 90027
-(213) 289-9816
+(34.097777, -118.28706)
 
 El Chato Taco Truck
 5300 W Olympic Blvd Los Angeles, CA 90019
+(34.056889, -118.346233)
 
 The Feeding Frnzy
 435 W 6 Th St Los Angeles, CA 90010
-(714) 697-8016
+(34.047600, -118.253495)

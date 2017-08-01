@@ -235,6 +235,4 @@ public class LowkeyLAMap extends AppCompatActivity implements OnMapReadyCallback
 
 
 
-
-
-    }}
+}}

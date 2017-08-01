@@ -62,4 +62,5 @@ public class FoodTruckMap extends AppCompatActivity  implements OnMapReadyCallba
                 .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(TheFeedingFrnzy, 12.0f));
 
-    }}
+    }
+}
