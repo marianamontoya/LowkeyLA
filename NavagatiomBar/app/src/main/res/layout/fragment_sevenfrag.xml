@@ -55,7 +55,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_width="match_parent"/>
 
         <View
             android:id="@+id/belowdtc"
@@ -77,7 +77,7 @@
 
         <TextView
             android:id="@+id/please"
-            android:layout_width="354dp"
+            android:layout_width="match_parent"
             android:layout_height="188dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -124,7 +124,7 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="311dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginBottom="16dp"
             android:layout_marginStart="8dp"
@@ -132,6 +132,7 @@
             android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:text="@string/charlene"
+            android:textAlignment="center"
             android:textSize="50sp"
             android:textColor="@color/colorDavyGrey"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -159,14 +160,24 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.43" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/charlene"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_weight="0.50"
+            />
+
         <TextView
-            android:layout_width="327dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/charlene_quote"
             android:textSize="20sp"
+            android:textAlignment="center"
             android:lineSpacingExtra="5dp"
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="sans-serif-condensed"
@@ -179,9 +190,10 @@
             android:layout_weight="0.09" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/emily"
+            android:textAlignment="center"
             android:textSize="50sp"
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="serif-monospace"
@@ -205,21 +217,32 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.43" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/emilytwo"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_weight="0.50"
+            />
+
         <TextView
-            android:layout_width="333dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/emily_quote"
             android:textSize="20sp"
             android:paddingRight="20dp"
+            android:textAlignment="center"
             android:lineSpacingExtra="5dp"
             android:fontFamily="sans-serif-condensed"
             android:textColor="@color/colorDavyGrey"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mariana"
             android:textSize="50sp"
+            android:textAlignment="center"
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"/>
@@ -242,15 +265,96 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.43" />
 
+        
+
         <TextView
-            android:layout_width="326dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="50dp"
             android:text="@string/mariana_quote"
             android:textSize="20dp"
+            android:textAlignment="center"
             android:lineSpacingExtra="5dp"
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="sans-serif-condensed"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AND A"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDavyGrey"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPECIAL"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDavyGrey"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THANKS TO..."
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDavyGrey"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:text="Jessica Hoffman"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorDavyGrey"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/belowThanks"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.43" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:paddingBottom="50sp"
+            android:text="Jessica, our teacher, has inspired us to achieve more than expected. She gave
+us knowledge and mentored us on app development. She is charismatic, hilarious, and a true leader. Without her guidence and brillant
+brain we would have not been able to create the app we have today."
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:padding="50dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/colorDavyGrey"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+
+
 
 
     </LinearLayout>
