@@ -27,7 +27,7 @@
         built this app to solve the problem of looking like an outsider, an outcast, and worst of
         all looking like a tourist. We want people to take advantage of our app to get out of
         there comfort zone and go out and explore new places. So with Lowkey LA you will be
-        able to fit in, know all the hidden treasure spots of Los Angeles and leave your comfort zone.</string>
+        able to fit in, know all the hidden spots of Los Angeles and leave your comfort zone.</string>
     
     <string name="personal">Down To Code is a group of three that is made up of high
         schoolers. We all come from different backgrounds as well as different lifestyles
@@ -46,6 +46,16 @@
         Netflix. and trying out different things.</string>
 
     <string name="about">About the Creators</string>
+
+    <string name="why_created">Down To Code built this app to solve the problem of looking like an outsider,
+        an outcast, and worst of all looking like a tourist. We want people to take advantage of our
+        app to get out of there comfort zone and go out and explore new places. So with Lowkey LA
+        you will be able to fit in, know all the hidden treasure spots of Los Angeles and leave
+        your comfort zone.</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="to">to</string>
+    <string name="lowkey_la">Lowkey LA</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
