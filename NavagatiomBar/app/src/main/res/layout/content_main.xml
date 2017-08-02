@@ -264,7 +264,12 @@
                 android:fontFamily="sans-serif-condensed"
                 android:lineSpacingExtra="5dp"
                 android:padding="10dp"
+<<<<<<< HEAD
+                android:text="Down To Code built this app to solve the problem of looking like an outsider, an outcast, and worst of all looking like a tourist. We want people to take advantage of our app to get out of there comfort zone and go out and explore new places. So with our app, LA will be exposed. You will know all the hidden spots, the finest date night locations, the best family outings, perfect for any occasion.
+"
+=======
                 android:text="@string/why_created"
+>>>>>>> 3e9818cdbbba0bfce673e47baa4006b6e6261b6e
                 android:layout_gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintBottom_toBottomOf="parent"
