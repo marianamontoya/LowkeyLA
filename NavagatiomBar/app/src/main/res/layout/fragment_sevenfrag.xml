@@ -162,7 +162,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/charlene"
+            android:src="@drawable/char_char"
             android:layout_height="250dp"
             android:layout_gravity="center"
             android:padding="15dp"
@@ -219,7 +219,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/emilytwo"
+            android:src="@drawable/emily"
             android:layout_height="250dp"
             android:layout_gravity="center"
             android:padding="15dp"
@@ -264,6 +264,15 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.43" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/mariana"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_weight="0.50"
+            />
 
         
 
@@ -319,6 +328,14 @@
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/who"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_weight="0.50"
+            />
 
         <View
             android:id="@+id/belowThanks"
