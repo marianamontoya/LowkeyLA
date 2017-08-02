@@ -147,9 +147,81 @@
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
                 android:layout_gravity="center"
+                android:padding="15dp"
                 android:layout_weight="0.50"
                 android:src="@drawable/la_back" />
 
+            <View
+                android:id="@+id/below_la_back"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.74"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LOWKEY LA"
+                android:textColor="@color/colorSilverChalice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <TextView
+                android:id="@+id/def2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(lo - Kee)"
+                android:textColor="@color/colorSilverChalice"
+
+                />
+
+            <TextView
+                android:id="@+id/def3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. secret, not known"
+                android:textColor="@color/colorSilverChalice"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <TextView
+                android:id="@+id/def4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSilverChalice"
+                android:paddingBottom="5dp"
+                android:text="2. locations that are trendy but difficult to find "
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <View
+                android:id="@+id/below_definition"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.74"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/OBJECTIVE"
@@ -174,6 +246,21 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.965" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/relativeLayout">
+
+
+
+
+            </RelativeLayout>
 
 
         </LinearLayout>
