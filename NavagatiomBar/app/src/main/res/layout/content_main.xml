@@ -230,6 +230,7 @@
                 android:layout_gravity="center"
                 android:padding="15dp"
                 android:layout_weight="0.50"
+                android:textAlignment="center"
                 />
 
             <View
@@ -300,6 +301,7 @@
                 android:layout_gravity="center"
                 android:padding="15dp"
                 android:layout_weight="0.50"
+                android:textAlignment="center"
                 />
 
             <TextView
