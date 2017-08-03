@@ -258,7 +258,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.43" />
 
-<<<<<<< HEAD
         <ImageView
             android:layout_width="match_parent"
             android:src="@drawable/mariana"
@@ -267,9 +266,6 @@
             android:padding="15dp"
             android:layout_weight="0.50"
             android:contentDescription="@string/mariana" />
-=======
->>>>>>> 54733b3bd3a05b1092dd19988010d003210bc3f6
-
 
         <TextView
             android:layout_width="match_parent"
@@ -316,19 +312,13 @@
 
         <TextView
             android:layout_width="match_parent"
-<<<<<<< HEAD
-            android:layout_height="60sp"
-            android:text="@string/jessica"
-=======
             android:layout_height="25sp"
             android:text="Jessica Hoffman"
->>>>>>> 54733b3bd3a05b1092dd19988010d003210bc3f6
             android:textSize="25sp"
             android:textAlignment="center"
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"/>
-<<<<<<< HEAD
 
         <ImageView
             android:id="@+id/jessica"
@@ -339,8 +329,7 @@
             android:layout_weight="0.50"
             android:padding="15dp"
             android:src="@drawable/who" />
-=======
->>>>>>> 54733b3bd3a05b1092dd19988010d003210bc3f6
+
 
         <View
             android:id="@+id/belowThanks"
