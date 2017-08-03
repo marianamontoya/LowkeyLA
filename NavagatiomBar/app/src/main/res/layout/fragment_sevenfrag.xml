@@ -162,12 +162,11 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/charlene"
-            android:layout_height="250dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="15dp"
             android:layout_weight="0.50"
-            />
+            android:padding="15dp"
+            android:src="@drawable/char_char" />
 
         <TextView
             android:layout_width="match_parent"
@@ -219,12 +218,11 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/emilytwo"
-            android:layout_height="250dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="15dp"
             android:layout_weight="0.50"
-            />
+            android:padding="15dp"
+            android:src="@drawable/emily" />
 
         <TextView
             android:layout_width="match_parent"
@@ -265,6 +263,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.43" />
 
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.50"
+            android:padding="15dp"
+            android:src="@drawable/mariana" />
 
 
         <TextView
@@ -319,6 +325,14 @@
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.50"
+            android:padding="15dp"
+            android:src="@drawable/who" />
 
         <View
             android:id="@+id/belowThanks"
