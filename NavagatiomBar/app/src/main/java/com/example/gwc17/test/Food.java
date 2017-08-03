@@ -21,7 +21,6 @@ import java.util.List;
 import java.io.IOException;
 import java.util.Map;
 
-
 /**
  * Created by GWC17 on 7/25/2017.
  */
@@ -59,21 +58,37 @@ public class Food extends AppCompatActivity implements AdapterView.OnItemClickLi
             line = reader.readLine(); //first line
             while (!line.equals("MUSEUMS")) {
 
-                if(line.isEmpty() || line.equals("RESTAURANTS")) {
-                    if (data != "") {
-                        data+="\n";
-                        restaurantInfo.put(name,data);
-                        name = "";
-                        data = "";
+                if (!line.isEmpty() && line.charAt(0) == '@') {
+                    name = line.substring(1);
+
+                    String description = "";
+                    String address = "";
+
+                    for (int i = 0; i < MainActivity.locationData.size(); i++) {
+                        if (name.equals(MainActivity.locationData.get(i).get(0))) {
+
+                            Map<String,String> foundData = (HashMap) MainActivity.locationData.get(i).get(1);
+
+                            for (Map.Entry entry : foundData.entrySet()) {
+                                if (entry.getKey().equals("Description")) {
+                                    description = (String) entry.getValue();
+                                } else if (entry.getKey().equals("Address")) {
+                                    address = (String) entry.getValue();
+                                }
+                            }
+                        }
                     }
-                } else {
-                    if (name == "") {
-                        name = line;
-                    } else if (data == "") {
-                        data += line;
-                    } else {
-                        data += "\n"+line;
+
+                    if (description != "") {
+                        data += description + "\n";
                     }
+                    if (address != "") {
+                        data += address + "\n";
+                    }
+
+                    restaurantInfo.put(name,data);
+
+                    data = "";
                 }
                 line = reader.readLine();
             }
@@ -112,7 +127,7 @@ public class Food extends AppCompatActivity implements AdapterView.OnItemClickLi
 
     public void onItemClick(AdapterView<?> l, View v, int position, long id) {
         Intent intent = new Intent();
-        intent.setClass(this, SpecificMap.class);
+        intent.setClass(this, DetailedView.class);
         intent.putExtra("position", position);
         intent.putExtra("name",listOrder.get(position));
         startActivity(intent);

@@ -63,21 +63,37 @@ public class Museums extends AppCompatActivity implements AdapterView.OnItemClic
             }
             while (!line.equals("COOL PLACES")) {
 
-                if(line.isEmpty() || line.equals("MUSEUMS")) {
-                    if (data != "") {
-                        data+="\n";
-                        museumInfo.put(name,data);
-                        name = "";
-                        data = "";
+                if (!line.isEmpty() && line.charAt(0) == '@') {
+                    name = line.substring(1);
+
+                    String description = "";
+                    String address = "";
+
+                    for (int i = 0; i < MainActivity.locationData.size(); i++) {
+                        if (name.equals(MainActivity.locationData.get(i).get(0))) {
+
+                            Map<String,String> foundData = (HashMap) MainActivity.locationData.get(i).get(1);
+
+                            for (Map.Entry entry : foundData.entrySet()) {
+                                if (entry.getKey().equals("Description")) {
+                                    description = (String) entry.getValue();
+                                } else if (entry.getKey().equals("Address")) {
+                                    address = (String) entry.getValue();
+                                }
+                            }
+                        }
                     }
-                } else {
-                    if (name == "") {
-                        name = line;
-                    } else if (data == "") {
-                        data += line;
-                    } else {
-                        data += "\n"+line;
+
+                    if (description != "") {
+                        data += description + "\n";
                     }
+                    if (address != "") {
+                        data += address + "\n";
+                    }
+
+                    museumInfo.put(name,data);
+
+                    data = "";
                 }
                 line = reader.readLine();
             }
@@ -116,7 +132,7 @@ public class Museums extends AppCompatActivity implements AdapterView.OnItemClic
 
     public void onItemClick(AdapterView<?> l, View v, int position, long id) {
         Intent intent = new Intent();
-        intent.setClass(this, SpecificMap.class);
+        intent.setClass(this, DetailedView.class);
         intent.putExtra("position", position);
         intent.putExtra("name",listOrder.get(position));
         startActivity(intent);
