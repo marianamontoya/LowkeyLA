@@ -33,32 +33,13 @@ public class SpecificMap extends AppCompatActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
-//            mMap.setMyLocationEnabled(true);
-
-
 
         Intent intent = getIntent();
         int position = intent.getIntExtra("position", 0);
         name = intent.getStringExtra("name");
 
-
-        for (int i = 0; i < MainActivity.locationData.size(); i++) {
-            if (name.equals(MainActivity.locationData.get(i).get(0))) {
-//                Log.e("FOUND", name);
-
-                Map<String,String> data = (HashMap) MainActivity.locationData.get(i).get(1);
-
-                for (Map.Entry entry : data.entrySet()) {
-                    if (entry.getKey().equals("Latitude")) {
-                        latitude = Double.parseDouble((String) entry.getValue());
-//                        Log.e("FOUND LA", (String) entry.getValue());
-                    } else if (entry.getKey().equals("Longitude")) {
-                        longitude = Double.parseDouble((String) entry.getValue());
-                    }
-                }
-            }
-        }
+        latitude = intent.getDoubleExtra("lat",0.0);
+        longitude = intent.getDoubleExtra("lon",0.0);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -66,7 +47,6 @@ public class SpecificMap extends AppCompatActivity implements OnMapReadyCallback
     }
 
     @Override
-
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 

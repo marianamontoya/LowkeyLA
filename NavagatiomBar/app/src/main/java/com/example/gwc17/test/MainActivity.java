@@ -30,7 +30,6 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-//    public List<Map<String,String>> locationData = new ArrayList();
     public static List<List<Object>> locationData = new ArrayList();
 
     @Override
@@ -41,15 +40,6 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         createLocationData();
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -80,36 +70,19 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
 
         if (item.getItemId() == R.id.mapButton) {
             Intent i = new Intent(MainActivity.this, LowkeyLAMap.class);
             startActivity(i);
         }
-
         return super.onOptionsItemSelected(item);
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
 
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
@@ -156,7 +129,7 @@ public class MainActivity extends AppCompatActivity
             line = reader.readLine(); //first line
 
             List<Object> stuff = new ArrayList();
-            int counter = 0;
+//            int counter = 0;
             String name = "";
             Map <String,String> data = new HashMap<String,String>();
 
@@ -168,13 +141,12 @@ public class MainActivity extends AppCompatActivity
 
                         stuff.add(name);
                         stuff.add(data);
-//                        counter = 0;
                         locationData.add(stuff);
 
-//                        Log.d("NAME", name);
-//                        for (Map.Entry entry : data.entrySet()) {
-//                            Log.d("DATA", entry.getKey() + ", " + entry.getValue());
-//                        }
+                        Log.d("NAME", name);
+                        for (Map.Entry entry : data.entrySet()) {
+                            Log.d("DATA", entry.getKey() + ", " + entry.getValue());
+                        }
 
                         name = "";
                         data = new HashMap<String,String>();
@@ -183,11 +155,7 @@ public class MainActivity extends AppCompatActivity
                 } else {
 
                     if (name == "") {
-                        name = line;
-//                    } else if (counter == 1) {
-//                        data.put("Latitude", line);
-//                    } else if (counter == 2) {
-//                        data.put("Longitude", line);
+                        name = line.substring(1);
                     } else {
                         if (line.charAt(4) == ')') { //phone number
                             data.put("Phone", line);
@@ -195,19 +163,22 @@ public class MainActivity extends AppCompatActivity
                             data.put("Address", line);
                         } else if (line.charAt(0) == '*') { //address
                             data.put("Address", line.substring(1));
-                        } else if (line.charAt(line.length() - 2) == '$') { //description
+                        } else if ((line.charAt(line.length() - 2) == '$')) { //description
                             data.put("Description", line);
+                        } else if ((line.charAt(0) == '!')) { //description
+                            data.put("Description", line.substring(1));
                         } else if (line.charAt(line.length() - 1) == ')') { //lat & long
-                            String a = line.substring(1,line.length()-2);
-                            String lat = a.substring(0,9);
+                            String a = line.substring(1, line.length() - 2);
+                            String lat = a.substring(0, 9);
                             String lon = a.substring(11);
                             data.put("Latitude", lat);
                             data.put("Longitude", lon);
+                        } else if (line.charAt(0) == '~') {
+                            data.put("Extra",line.substring(1));
                         } else { //website
                             data.put("Website", line);
                         }
                     }
-                    counter ++;
                 }
                 line = reader.readLine();
             }

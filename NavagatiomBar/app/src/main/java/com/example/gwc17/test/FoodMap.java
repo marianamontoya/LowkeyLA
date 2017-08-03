@@ -17,7 +17,11 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.ArrayList;
+import java.util.List;
 //import android.view.View.OnClickListener;
 
 /**
@@ -26,6 +30,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class FoodMap extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
+    private List<Marker> markers = new ArrayList<>();
 
     @Override
 
@@ -44,12 +49,18 @@ public class FoodMap extends AppCompatActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
+
+    //todo make camera include all points
 
         LatLng KazuNori = new LatLng(34.047700, -118.247882);
-        mMap.addMarker(new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
-                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
+
+        MarkerOptions k = new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+
+
+//        mMap.addMarker(new MarkerOptions().position(KazuNori).title("KazuNori").icon(BitmapDescriptorFactory
+//                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(KazuNori, 12.0f));
 
         LatLng GrandCentralMarket =new LatLng(34.050655, -118.248795);
         mMap.addMarker(new MarkerOptions().position(GrandCentralMarket).title("Grand Central Market").icon(BitmapDescriptorFactory
