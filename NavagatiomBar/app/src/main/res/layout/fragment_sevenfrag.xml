@@ -30,8 +30,6 @@
             android:layout_height="10dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="24dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorWhite"
@@ -63,8 +61,6 @@
             android:layout_height="10dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="24dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorWhite"
@@ -148,8 +144,6 @@
             android:layout_height="4dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="24dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorWhite"
@@ -167,6 +161,7 @@
             android:layout_gravity="center"
             android:padding="15dp"
             android:layout_weight="0.50"
+            android:contentDescription="@string/charlene"
             />
 
         <TextView
@@ -205,8 +200,6 @@
             android:layout_height="4dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="24dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorWhite"
@@ -224,6 +217,7 @@
             android:layout_gravity="center"
             android:padding="15dp"
             android:layout_weight="0.50"
+            android:contentDescription="@string/emily"
             />
 
         <TextView
@@ -231,7 +225,8 @@
             android:layout_height="wrap_content"
             android:text="@string/emily_quote"
             android:textSize="20sp"
-            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
             android:textAlignment="center"
             android:lineSpacingExtra="5dp"
             android:fontFamily="sans-serif-condensed"
@@ -253,8 +248,6 @@
             android:layout_height="4dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="24dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorWhite"
@@ -272,7 +265,7 @@
             android:layout_gravity="center"
             android:padding="15dp"
             android:layout_weight="0.50"
-            />
+            android:contentDescription="@string/mariana" />
 
         
 
@@ -281,17 +274,17 @@
             android:layout_height="wrap_content"
             android:paddingBottom="50dp"
             android:text="@string/mariana_quote"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:lineSpacingExtra="5dp"
             android:textColor="@color/colorDavyGrey"
-            android:fontFamily="sans-serif-condensed"/>
+            android:fontFamily="sans-serif-condensed" />
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AND A"
+            android:text="@string/and_a"
             android:textSize="50sp"
             android:textAlignment="center"
             android:textColor="@color/colorDavyGrey"
@@ -301,7 +294,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SPECIAL"
+            android:text="@string/special"
             android:textSize="50sp"
             android:textAlignment="center"
             android:textColor="@color/colorDavyGrey"
@@ -311,7 +304,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="THANKS TO..."
+            android:text="@string/thanks"
             android:textSize="50sp"
             android:textAlignment="center"
             android:textColor="@color/colorDavyGrey"
@@ -321,21 +314,23 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="200sp"
-            android:text="Jessica Hoffman"
+            android:layout_height="60sp"
+            android:text="@string/jessica"
             android:textSize="25sp"
             android:textAlignment="center"
             android:textColor="@color/colorDavyGrey"
             android:fontFamily="serif-monospace"
             android:textStyle="bold"/>
+
         <ImageView
+            android:id="@+id/jessica"
+            android:contentDescription="@string/jessica"
             android:layout_width="match_parent"
-            android:src="@drawable/who"
             android:layout_height="250dp"
             android:layout_gravity="center"
-            android:padding="15dp"
             android:layout_weight="0.50"
-            />
+            android:padding="15dp"
+            android:src="@drawable/who" />
 
         <View
             android:id="@+id/belowThanks"
@@ -343,8 +338,6 @@
             android:layout_height="4dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="24dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorWhite"
@@ -357,16 +350,13 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="360dp"
-            android:paddingBottom="50sp"
-            android:text="Jessica, our teacher, has inspired us to achieve more than expected. She gave
-us knowledge and mentored us on app development. She is charismatic, hilarious, and a true leader. Without her guidence and brillant
-brain we would have not been able to create the app we have today."
-            android:textSize="20dp"
-            android:textAlignment="center"
-            android:padding="50dp"
+            android:layout_height="285dp"
+            android:paddingBottom="40sp"
+            android:text="@string/jessica_quote"
+            android:textSize="20sp"
             android:lineSpacingExtra="5dp"
             android:textColor="@color/colorDavyGrey"
+            android:textAlignment="center"
             android:fontFamily="sans-serif-condensed"/>
 
 

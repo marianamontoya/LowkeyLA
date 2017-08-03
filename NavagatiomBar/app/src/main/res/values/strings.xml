@@ -2,7 +2,8 @@
     <string name="app_name">Lowkey LA</string>
     <string name="created">Created By: Down To Code</string>
     <string name="google_maps">Click This Button To Go To Google Maps</string>
-    <string name="google_current">After Selecting The Map Click This Button To Get Directions From Your Current Location</string>
+    <string name="google_current">After Selecting The Map Click This Button To Get Directions
+        From Your Current Location</string>
     <string name="help">Welcome to LowkeyLA!</string>
 
     <string name="food">Restaurants</string>
@@ -38,7 +39,7 @@
         as exploring and trying new places in Los Angeles. </string>
 
     <string name="emily_quote">Emily is 16 years old and is a senior at Culver City High School.
-        She plans to major in computer science and has a goal to pursue a career in cybersecurity.
+        She plans to major in computer science and has a goal to pursue a career in Cyber Security.
         She is Mexican, American and enjoys to meet new people and explore different places.</string>
 
     <string name="mariana_quote">Mariana is a 17 year old. This summer program has made it her
@@ -47,10 +48,25 @@
 
     <string name="about">About the Creators</string>
 
-    <string name="why_created">Down To Code built this app to solve the problem of looking like an outsider, an outcast, and worst of all looking like a tourist. We want people to take advantage of our app to get out of there comfort zone and go out and explore new places. So with our app, LA will be exposed. You will know all the hidden spots, the finest date night locations, the best family outings, perfect for any occasion.
+    <string name="why_created">Down To Code built this app to solve the problem of looking like
+        an outsider, an outcast, and worst of all looking like a tourist. We want people to take
+        advantage of our app to get out of there comfort zone and go out and explore new places.
+        So with our app, LA will be exposed. You will know all the hidden spots, the finest date
+        night locations, the best family outings, perfect for any occasion.
 </string>
 
+    <string name="jessica_quote">Jessica, our teacher, has inspired us to achieve more than
+        expected. She gave us knowledge and mentored us on app development. She is charismatic,
+        hilarious, and a true leader. Without her guidance and brilliant brain we would have not
+        been able to create the app we have today.</string>
+
+
+    <string name="jessica">Jessica Hoffman</string>
     <string name="welcome">Welcome</string>
+    <string name="thanks">THANKS TO&#8230;</string>
+    <string name="special">SPECIAL</string>
+    <string name="and_a">AND A</string>
+
     <string name="to">to</string>
     <string name="lowkey_la">Lowkey LA</string>
 
