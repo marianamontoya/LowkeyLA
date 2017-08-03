@@ -12,91 +12,99 @@
      <!--TODO: Update blank fragment layout -->
 
     <ScrollView
-    android:layout_width="363dp"
-    android:layout_height="587dp"
-    android:layout_alignParentStart="true"
-        android:fillViewport="true">
+        android:layout_width="wrap_content"
+        android:layout_height="587dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="-7dp"
+        android:fillViewport="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-    <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-        android:weightSum="1">
-
-        <View
-            android:id="@+id/abovedtc"
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43" />
-        <TextView
-            android:id="@+id/scrolz"
-            android:fontFamily="serif-monospace"
-            android:text="@string/down_to_code"
-            android:textSize="45sp"
-            android:textColor="@color/colorDavyGrey"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
+            android:orientation="vertical"
+            android:weightSum="1">
 
-        <View
-            android:id="@+id/belowdtc"
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43" />
+            <View
+                android:id="@+id/abovedtc"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
-        <TextView
-            android:id="@+id/please"
-            android:layout_width="match_parent"
-            android:layout_height="188dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/personal"
-            android:textSize="20sp"
-            android:lineSpacingExtra="5dp"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="sans-serif-condensed"
+            <TextView
+                android:id="@+id/scrolz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="@string/down_to_code"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/belowdtc"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
+
+            <TextView
+                android:id="@+id/please"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.77"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/personal"
+                android:textColor="@color/colorDavyGrey"
 
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.062"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.255"
-            android:layout_weight="0.77" />
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.255" />
 
-        <!--<ImageView-->
+            <!--<ImageView-->
             <!--android:id="@+id/imageView2"-->
             <!--android:layout_width="97dp"-->
             <!--android:layout_height="93dp"-->
@@ -117,277 +125,324 @@
             <!--app:srcCompat="@android:drawable/title_bar" />-->
 
 
+            <View
+                android:id="@+id/aboveChar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"
-            android:text="@string/charlene"
-            android:textAlignment="center"
-            android:textSize="50sp"
-            android:textColor="@color/colorDavyGrey"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.796"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.592" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif-monospace"
+                android:text="@string/charlene"
+                android:textAlignment="center"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.796"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.592" />
 
-        <View
-            android:id="@+id/belowChar"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43" />
+            <View
+                android:id="@+id/belowChar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.50"
-<<<<<<< HEAD
-            android:padding="15dp"
-            android:src="@drawable/char_char" />
-=======
-            android:contentDescription="@string/charlene"
-            />
->>>>>>> 00a16ce68de25b8375b3edc410feab4e714ae6e8
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:src="@drawable/char_char" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/charlene_quote"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:lineSpacingExtra="5dp"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="sans-serif-condensed"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:layout_constraintHorizontal_bias="0.062"
-            android:layout_weight="0.09" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.09"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/charlene_quote"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/emily"
-            android:textAlignment="center"
-            android:textSize="50sp"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"/>
+            <View
+                android:id="@+id/aboveEmily"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
-        <View
-            android:id="@+id/belowEmily"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="@string/emily"
+                android:textAlignment="center"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="50sp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.50"
-<<<<<<< HEAD
-            android:padding="15dp"
-            android:src="@drawable/emily" />
-=======
-            android:contentDescription="@string/emily"
-            />
->>>>>>> 00a16ce68de25b8375b3edc410feab4e714ae6e8
+            <View
+                android:id="@+id/belowEmily"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/emily_quote"
-            android:textSize="20sp"
-            android:paddingEnd="20dp"
-            android:paddingStart="20dp"
-            android:textAlignment="center"
-            android:lineSpacingExtra="5dp"
-            android:fontFamily="sans-serif-condensed"
-            android:textColor="@color/colorDavyGrey"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:src="@drawable/emily" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mariana"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="5dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/emily_quote"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="20sp" />
 
-        <View
-            android:id="@+id/belowMariana"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43" />
+            <View
+                android:id="@+id/abovemariana"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
-<<<<<<< HEAD
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="@string/mariana"
+                android:textAlignment="center"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="50sp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.50"
-            android:padding="15dp"
-            android:src="@drawable/mariana" />
-
-=======
-        <ImageView
-            android:layout_width="match_parent"
-            android:src="@drawable/mariana"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:padding="15dp"
-            android:layout_weight="0.50"
-            android:contentDescription="@string/mariana" />
->>>>>>> 00a16ce68de25b8375b3edc410feab4e714ae6e8
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="50dp"
-            android:text="@string/mariana_quote"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:lineSpacingExtra="5dp"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="sans-serif-condensed" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/and_a"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/special"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/thanks"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"/>
+            <View
+                android:id="@+id/belowMariana"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="25sp"
-            android:text="Jessica Hoffman"
-            android:textSize="25sp"
-            android:textAlignment="center"
-            android:textColor="@color/colorDavyGrey"
-            android:fontFamily="serif-monospace"
-            android:textStyle="bold"/>
-
-        <ImageView
-<<<<<<< HEAD
-=======
-            android:id="@+id/jessica"
-            android:contentDescription="@string/jessica"
->>>>>>> 00a16ce68de25b8375b3edc410feab4e714ae6e8
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:layout_weight="0.50"
-            android:padding="15dp"
-            android:src="@drawable/who" />
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 00a16ce68de25b8375b3edc410feab4e714ae6e8
-        <View
-            android:id="@+id/belowThanks"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.43" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="285dp"
-            android:paddingBottom="40sp"
-            android:text="@string/jessica_quote"
-            android:textSize="20sp"
-            android:lineSpacingExtra="5dp"
-            android:textColor="@color/colorDavyGrey"
-            android:textAlignment="center"
-            android:fontFamily="sans-serif-condensed"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:src="@drawable/mariana" />
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/mariana_quote"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/aboveAnd"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="@string/and_a"
+                android:textAlignment="center"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="@string/special"
+                android:textAlignment="center"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="@string/thanks"
+                android:textAlignment="center"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/belowthx"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
 
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:fontFamily="serif-monospace"
+                android:text="Jessica Hoffman"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/jessica"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:contentDescription="@string/jessica"
+                android:padding="15dp"
+                android:src="@drawable/who" />
+
+
+            <View
+                android:id="@+id/belowThanks"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.43" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="285dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="40sp"
+                android:paddingRight="10sp"
+                android:text="@string/jessica_quote"
+                android:textColor="@color/colorDavyGrey"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
 
     </ScrollView>
 
